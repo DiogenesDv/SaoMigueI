@@ -1,0 +1,205 @@
+/*Estrutura Padrao do site*/
+/*1600x900 pix monitor HD*/
+body{
+    background:  url(../imagens/topoSite1800x158.png) repeat-x center top;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    /*border: 3px solid rgb(71, 255, 61);*/
+    
+}
+/********Links do Menu e Logo********/
+header{/*AREA DO TOPO MENU - tudo relacionado ao menu fica aqui*/
+    padding: 15px;
+    height: 50px;
+}
+a:link, a:active, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+#logoSlide h1 a{
+    float: left;
+    text-transform: uppercase;
+    text-shadow: 8px 3px 4px rgb(0, 0, 0);
+    font-size: 26px;
+}
+#logoSlide a{
+    /*text-indent: -9999px;Retira da tela*/
+    display: block;/*Fica como bloco fixo no local do pixel(text-ident)*/
+    width: 248px;
+    height: 21px;
+    /*background: url(../imagens/SaoMiguelLogoLetras.png)no-repeat;*/
+    margin-top: -30px;
+    margin-left: -15px;
+}
+
+nav ul{
+    list-style: none;/*Retira os ponto na frente do link*/
+    float: left;/*Flutuar a direita*/
+    background: #86521ab4;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    margin-left: -15px;   
+    border-radius: 5px;
+}
+
+nav ul li {
+    float: left;/*Flutua dentro a Ul a esquerda, se colocar direita ele inverte a ordem*/
+}
+
+nav ul li a:link{
+    display: block;
+    margin-right: 25px;/*Vai se afastar do link que estiver a direita em 25px*/
+    padding-bottom: 3px;/*Vai se afastar da margin de baixo em 3px*/
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+/****************************/
+
+/***Formatação do Corpo(Site) central***/
+#container{
+    width: 1080px;
+    margin: 50px auto;
+}
+
+#conteudo{
+    width: 710px;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+/**************************************/
+
+
+/***Formatação do Corpo(Site) Lateral***/
+aside{
+    background: #ebe7dd;
+    width: 350px;
+    margin-top: 10px;
+    padding-bottom: 10px 27px 27px 27px;
+    float: right;
+    padding-bottom: 20px;
+    margin-bottom: 10px;/*PARA NAO COLAR NA MARGIN DO RODAPE*/
+}
+section#depoimento h3{
+    border-bottom: 1px solid #86521a2c;
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+section#depoimento p{
+    padding: 1px 10px;
+}
+section#visita{/*OBS COLOQUE o jogo da velha sempre colado com o nome da id, sempre que for uma id direta na tag*/
+    background: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+h3{
+    font-size: 1.2em;
+    border-bottom: 1px solid #86521a2c;
+    color: #b11a1a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+h4{
+    border-bottom: 1px solid #86521a2c;
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+/*******************************/
+
+/***Formatação de formularios***/
+input{
+    width: 150px;
+    height: 20px;
+    background: #fff;
+    border: none;
+    font-size: 1em;
+}
+input.campoTexto{
+    border: 1px solid #ada484;
+}
+input.botao{
+    background: #9b9271;
+    color: white;
+    width: 82%;
+    height: 30px;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+fieldset{
+    margin-left: 50px;
+    border: none;
+}
+legend#selecioneData{
+    display: none;
+}
+/******************************/
+
+/****Galeria***************/
+section#galeria {
+    padding: 0px 10px 0px 5px;
+}
+
+section#galeria a{
+    display: block;
+    background: url(../imagens/fundo-foto_150x150.png)no-repeat;
+    float: left;
+    padding: 15px 15px 16px 15px;    
+    margin: 10px 0px 0px 15px;
+}
+
+section#galeria img{
+    margin-left: 2px;
+    margin-top: 3px;
+}
+/********VIDEO,MAPA E TEXTO**********/
+article#video{
+    float: left;
+    width: 350px;  
+}
+
+article#mapa{
+    float: right;
+    width: 350px;  
+}
+article#horariosMissas{
+    float: left;
+    width: 350px;
+    font-size: 1.2em;
+}
+
+article#paragrafo{
+    float: right;
+    width: 350px;
+    font-size: 1.2em;
+}
+/********************************/
+
+/*****RODAPE************/
+footer{
+    padding: 10px 0;
+    text-align: center;
+    background: url(../imagens/fundo-rodape.png) no-repeat center top;
+    margin-top: 20px;
+}
+p#menuRodape a{
+    color: #86521a;
+    margin-left: 10px;
+}
+
+footer>p a{
+    padding: 5px;
+}
